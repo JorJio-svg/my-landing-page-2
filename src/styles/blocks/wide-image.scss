@@ -1,0 +1,17 @@
+.wide-image {
+  background-image: url(../images/footer-bg-mobile.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 200px;
+
+  @include on-tablet {
+    background-image: url(../images/footer-bg-tablet.png);
+    min-height: 400px;
+  }
+
+  @include on-desktop {
+    background-image: url(../images/footer-bg-desktop.png);
+    min-height: 460px;
+  }
+}

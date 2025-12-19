@@ -1,0 +1,33 @@
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-block: 24px;
+
+  @include on-tablet {
+    padding-block: 36px;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__logo-link {
+    display: flex;
+  }
+
+  &__logo {
+    @include hover(transform, scale(1.2));
+
+    height: 16px;
+    width: 125px;
+
+    @include on-tablet {
+      width: 172px;
+      height: 24px;
+    }
+  }
+}
+

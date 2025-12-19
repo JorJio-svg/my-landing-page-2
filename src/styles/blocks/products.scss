@@ -1,0 +1,23 @@
+
+.product {
+  &__title {
+    font-family: $font-family-space-grotesk;
+    font-weight: $font-weight-bold;
+    font-size: 18px;
+    line-height: $line-height-base;
+  }
+
+  &__description {
+    font-family: $font-family-space-mono;
+    font-weight: 400;
+    font-size: $font-size--16;
+    line-height: $line-height-base;
+  }
+
+  &__price {
+    font-family: $font-family-space-grotesk;
+    font-weight: $font-weight-bold;
+    font-size: $font-size--16;
+    line-height: $line-height-base;
+  }
+}

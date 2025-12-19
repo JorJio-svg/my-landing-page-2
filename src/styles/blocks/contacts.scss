@@ -1,0 +1,93 @@
+.contacts {
+  &__content {
+    @include page-grid;
+
+    @include on-tablet {
+      column-gap: 24px;
+      height: 382px;
+    }
+  }
+}
+
+.form {
+  grid-column: 1 / -1;
+
+
+  @include on-desktop {
+    grid-column: span 5;
+  }
+
+  &__content {
+    display: grid;
+    row-gap: 16px;
+    margin-bottom: 48px;
+  }
+
+  @include on-tablet {
+    margin: 0;
+  }
+}
+
+.label {
+  &__input {
+    box-sizing: border-box;
+    display: block;
+    padding: 16px 0 16px 16px;
+
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #F8F8FA;
+
+    font-family: $font-family-space-mono;
+    font-size: 14px;
+    line-height: $line-height-base;
+  }
+
+  &__textarea {
+    box-sizing: border-box;
+    display: block;
+    padding: 16px 0 16px 16px;
+    margin-bottom: 16px;
+
+    width: 100%;
+    height: 148px;
+    border-radius: 8px;
+    border: none;
+    resize: none;
+    outline: none;
+    background-color: #F8F8FA;
+
+  }
+}
+
+.address {
+  height: 244px;
+  grid-column: 1 / -1;
+
+  @include on-tablet {
+    grid-column: span 3;
+  }
+
+  @include on-desktop {
+    grid-column: 8 / span 3;
+  }
+
+  &__label {
+    font-family: $font-family-space-grotesk;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: $line-height-base;
+    color: #9393A3;
+  }
+
+  &__link {
+    font-family: $font-family-space-mono;
+    font-weight: 400;
+    font-size: $font-size--16;
+    line-height: $line-height-base;
+    text-decoration: none;
+    color: #191919;
+  }
+}

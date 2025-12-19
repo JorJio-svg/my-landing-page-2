@@ -1,0 +1,35 @@
+.main {
+  background-color: #fff;
+
+  &__content {
+    box-sizing: border-box;
+    display: grid;
+    row-gap: 96px;
+
+    @include on-tablet {
+      row-gap: 120px;
+    }
+
+    @include on-desktop {
+      row-gap: 128px;
+    }
+
+    &--1st-part {
+      padding-block: 64px 96px;
+
+      @include on-tablet {
+        padding-block: 120px;
+      }
+    }
+
+    &--2nd-part {
+      padding-block: 48px 64px;
+
+      @include on-tablet {
+        padding-block: 120px;
+      }
+    }
+
+    @include slide-up;
+  }
+}

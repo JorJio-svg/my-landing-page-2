@@ -1,0 +1,50 @@
+
+.header {
+  background-image: url(../images/header-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__content {
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__bottom {
+    margin-bottom: 40px;
+
+    @include on-tablet {
+      margin-bottom: 65px;
+    }
+
+    @include on-desktop {
+      margin-bottom: 92px;
+    }
+  }
+
+  &__title {
+    font-family: $font-family-space-grotesk;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    color: $main-text-color;
+
+    @include on-tablet {
+      text-align: left;
+      font-size: 48px;
+    }
+
+    @include on-desktop {
+      font-size: 56px;
+    }
+  }
+}
