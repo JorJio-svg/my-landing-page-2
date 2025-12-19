@@ -4,7 +4,6 @@
 
     @include on-tablet {
       column-gap: 24px;
-      height: 382px;
     }
   }
 }
@@ -63,7 +62,6 @@
 }
 
 .address {
-  height: 244px;
   grid-column: 1 / -1;
 
   @include on-tablet {
@@ -76,6 +74,7 @@
 
   &__label {
     font-family: $font-family-space-grotesk;
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: $line-height-base;
@@ -84,6 +83,7 @@
 
   &__link {
     font-family: $font-family-space-mono;
+    font-style: normal;
     font-weight: 400;
     font-size: $font-size--16;
     line-height: $line-height-base;
