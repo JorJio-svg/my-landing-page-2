@@ -1,8 +1,8 @@
 {
-  "name": "layout_landing-page",
+  "name": "my-landing-page-2",
   "version": "1.0.0",
   "description": "Landing page",
-  "homepage": "layout_landing-page",
+  "homepage": "my-landing-page-2",
   "scripts": {
     "init": "mate-scripts init",
     "start": "mate-scripts start -l",
